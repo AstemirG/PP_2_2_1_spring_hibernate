@@ -36,7 +36,9 @@ public class MainApp {
       userService.add(user3);
       userService.add(user4);
 
-      userService.getUserByCar("test1",1);
+      System.out.println("----------------------------------------------------------");
+      System.out.println(userService.getUserByCar("test1",1));
+      System.out.println("----------------------------------------------------------");
 
       List<User> users = userService.listUsers();
       for (User user : users) {
