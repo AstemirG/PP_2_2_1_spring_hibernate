@@ -28,7 +28,7 @@ public class UserServiceImp implements UserService {
 
    @Transactional(readOnly = true)
    @Override
-   public List<User> getUserByCar(String parModel, int parSeries) {
+   public User getUserByCar(String parModel, int parSeries) {
       return userDao.getUserByCar(parModel, parSeries);
    }
 
